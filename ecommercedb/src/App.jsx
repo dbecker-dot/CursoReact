@@ -1,19 +1,16 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import NavBar from './components/NavBar/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Ecommerce - DB</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <NavBar></NavBar>
+      <ItemListContainer greeting={'Bienvenidos!'}></ItemListContainer>
     </>
   )
 }
