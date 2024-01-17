@@ -11,6 +11,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <ItemListContainer greeting={'Bienvenidos!'}></ItemListContainer>
+      <ItemListContainer></ItemListContainer>
     </>
   )
 }
